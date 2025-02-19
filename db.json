@@ -1,0 +1,35 @@
+{
+  "todos": [],
+  "users": [
+    {
+      "id": "bee0",
+      "username": "ravi",
+      "email": "ravi@example.com",
+      "password": "hi456"
+    },
+    {
+      "id": "f7b6",
+      "username": "abd",
+      "email": "abd@example.com",
+      "password": "hello123"
+    },
+    {
+      "id": "f2d2",
+      "username": "xyz",
+      "email": "xyz@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "eb68",
+      "username": "qwerty",
+      "email": "qwerty@mail.com",
+      "password": "hi456"
+    },
+    {
+      "id": "7acd",
+      "username": "narasimham",
+      "email": "a@gmail.com",
+      "password": "hi123"
+    }
+  ]
+}

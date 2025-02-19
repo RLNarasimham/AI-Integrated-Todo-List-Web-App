@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease;
+}
+
+.collapsed .sidebar {
+  width: 60px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.profile h3 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.profile.hidden {
+  display: none;
+  padding-bottom: 30px;
+}
+
+.profile {
+  align-items: center;
+  padding: 15px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 50px;
+  padding-right: 30px;
+}
+
+nav ul li {
+  margin-bottom: 20px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #34495e;
+}
+
+nav ul li a .icon {
+  margin-right: 10px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #34495e;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  color: #6c63ff;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .toggle-btn {
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+  }
+
+  .collapsed .sidebar {
+    width: 60px;
+  }
+
+  .profile h3 {
+    display: none;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

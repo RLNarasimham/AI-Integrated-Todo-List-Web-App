@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-container {
+  margin: 0;
+  padding: 0 5vw;
+  padding-bottom: 350px;
+}
+
+.hero-section {
+  margin: 0;
+  padding: 4vh 5vw;
+  text-align: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .app-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1650px;
+}
+
+.hero-section .app-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 6vh 7vw;
+  }
+
+  .hero-section .app-title {
+    font-size: 4rem;
+  }
+
+  .features-section,
+  .contact-section {
+    padding: 4vw;
+  }
+
+  .action-buttons .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4vh 5vw;
+  }
+
+  .hero-section .app-title {
+    font-size: 3rem;
+  }
+
+  .action-buttons .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .features-list li {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2vh 3vw;
+  }
+
+  .hero-section .app-title {
+    font-size: 2.5rem;
+  }
+
+  .highlight-section {
+    font-size: 2rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.features-section {
+  background: #A3FCB2;
+  padding: 5vw;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 5vh 0;
+}
+
+.features-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.features-list li {
+  font-size: 1.5rem;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  color: #555;
+  transition: background 0.3s ease;
+}
+
+.features-list li:hover {
+  background: #e3f2fd;
+}
+
+.contact-section {
+  padding: 5vw;
+  background: #FCA3E7;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 5vh 0;
+}
+
+.contact-section h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.action-buttons .btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: auto;
+}
+
+.btn-login {
+  background-color: #007bff;
+  color: #fff;
+  border: 2px solid #007bff;
+}
+
+.btn-login:hover {
+  background-color: #A4FFF9;
+  color: #F7FCFC;
+}
+
+.btn-register {
+  background-color: #28a745;
+  color: #fff;
+  border: 2px solid #28a745;
+}
+
+.btn-register:hover {
+  background-color: #A4FFF9;
+  color: #F7FCFC;
+}
+
+.message-section {
+  background: #FFDFBF;
+  padding: 5vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5vh;
+}
+
+.message-section h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.message-box {
+  width: 89%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+.btn-send {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-send:hover {
+  background-color: #0056b3;
+}
+
+.highlight-section {
+  font-size: 3rem;
+  color: #2d5aff;
+  text-align: center;
+  margin: 5vh 0;
+}
